@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage - Kresna</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <!--Top Header-->
+        <header><h1>Homepage</h1></header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('homepage') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutme') }}">About Me</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Homepage-->
+        <section id="homepage" class="homepage">
+            <!--Short Intro + semi-transparent bg-->
+            <section class="shortintro">
+                <img src="{{ url_for('static', filename='biodata.png') }}" alt="Profile Picture">
+                <h2>Kresna Anugrahayutya</h2>
+                <p>A first year bachelor of electrical engineering student at Universitas Padjadjaran.</p>
+            </section>
+            <!--Welcome + About Me Button-->
+            <h2>Discover My World</h2>
+            <p>Welcome to my personal website! Here, you can learn more about me, my projects, and my contact information.</p>
+            <a href="{{ url_for('aboutme') }}" class="aboutme-button">Learn More About Me</a>
+        </section>
+    </body>
+</html>

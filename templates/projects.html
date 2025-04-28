@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Kresna</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <!--Top Header-->
+        <header><h1>Projects</h1></header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('homepage') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutme') }}">About Me</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="{{ url_for('static', filename='project1.jpeg') }}" alt="Project 1">
+                <div class="project-info">
+                    <h3>Water Level Monitoring System</h3>
+                    <p>
+                        This project was developed as the final assignment for the <i>Pemrograman I</i> course. It leverages the portability and versatility of the Arduino Nano,
+                        along with the affordability of the HC-SR04 ultrasonic proximity sensor. Data collected by the sensor is processed using an Arduino Uno and visualized
+                        on a 0.96-inch OLED display.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

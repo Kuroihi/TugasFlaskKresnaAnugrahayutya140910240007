@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Kresna</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <!--Top Header-->
+        <header><h1>Contact</h1></header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('homepage') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutme') }}">About Me</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Contacts-->
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='whatsapp.png') }}" alt="WhatsApp">
+                <a href="https://wa.me/6281564623712" target="_blank">+62 815 6462 3712</a>
+            </div>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram">
+                <a href="https://www.instagram.com/kresna_ayt/" target="_blank">@kresna_ayt</a>
+            </div>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/kresna-anugrahayutya-b51517328/" target="_blank">Kresna Anugrahayutya</a>
+            </div>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='email.png') }}" alt="Email">
+                <a href="mailto:kresna24001@mail.unpad.ac.id">kresna24001@mail.unpad.ac.id</a>
+            </div>
+        </section>
+    </body>
+</html>
